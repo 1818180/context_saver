@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name" : "ContextSaver",
+    "description": "auto save all the contexts of your highlighted vocabulary",
+    "version" : "1.0",
+    "icons": {
+        "16": "/images/context16.png",
+        "48": "/images/context48.png",
+        "128": "/images/context128.png"
+    },
+    "page_action" :{
+        "default_icon": {
+            "16": "/images/context16-2.png",
+            "48": "/images/context48-2.png",
+            "128": "/images/context128-2.png"
+        }
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://www.bing.com/?mkt=zh-CN"],
+        "css": ["main.css"]
+        }
+    ]
+}
